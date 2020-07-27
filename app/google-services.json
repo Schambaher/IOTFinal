@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "291234421683",
+    "firebase_url": "https://iottecsupss.firebaseio.com",
+    "project_id": "iottecsupss",
+    "storage_bucket": "iottecsupss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291234421683:android:e24001c2b296516dfd89c6",
+        "android_client_info": {
+          "package_name": "com.example.iotfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291234421683-lie41q7ejjstg1tpgmsd3h501saaa1g5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iotfinal",
+            "certificate_hash": "5f6badb0b0f4d8d0887d9d2491fb00ccf2de78d7"
+          }
+        },
+        {
+          "client_id": "291234421683-6c4cgstpqrq7c5pocnan52t832cugb8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBboSmg4B0uIj6hyjo9jkkAukjShZuJuo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291234421683-6c4cgstpqrq7c5pocnan52t832cugb8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

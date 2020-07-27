@@ -2,6 +2,7 @@ package com.example.iotfinal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView imgLed2;
     private Button btnLedOn1;
     private Button btnLedOn2;
-    private Button btnLedOff1;
+    private Button btnLedOff1,atras_leds;
     private Button btnLedOff2;
     private Leds leds;
 
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        atras_leds= findViewById(R.id.atras_main);
 
         imgLed1 = (ImageView)findViewById(R.id.imgLed1);
         imgLed2 = (ImageView)findViewById(R.id.imgLed2);
@@ -58,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
                     imgLed2.setImageResource(R.drawable.led_off);
                 }
             }
+
+
 
             @Override
             public void onCancelled(DatabaseError error) {
@@ -93,5 +98,15 @@ public class MainActivity extends AppCompatActivity {
                 myRef.setValue(leds);
             }
         });
+
+        atras_leds.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Principal.class);
+                startActivity(intent);
+
+            }
+        });
     }
+
 }
